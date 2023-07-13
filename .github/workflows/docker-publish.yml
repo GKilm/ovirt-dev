@@ -18,7 +18,7 @@ jobs:
       - name: Setup docker (missing on MacOS)
         uses: crazy-max/ghaction-setup-docker@v1
         with:
-          version: 23.0.1
+          version: v24.0.4
 
       - name: Log in to Docker Hub
         uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
