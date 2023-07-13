@@ -14,7 +14,7 @@ RUN \
     dnf install -y libicu java-11-openjdk-devel mailcap unzip openssl bind-utils  postgresql postgresql-contrib python3-dateutil python3-cryptography python3-m2crypto python3-psycopg2 \
     python3-jinja2 python3-libxml2 python3-daemon python3-otopi python3-ovirt-setup-lib ansible ansible-runner-service-dev ovirt-ansible-roles ovirt-imageio-daemon python3-distro \
     #python-flake8 python-pep8 python-docker-py python2-isort ovirt-engine-metrics \
-    python3-ovirt-engine-sdk4 python3-ansible-lint ovirt-engine-wildfly ovirt-engine-wildfly-overlay &&\
+    python3-ovirt-engine-sdk4 python3-ansible-lint ovirt-engine-wildfly ovirt-engine-wildfly-overlay \
     # 安装额外的应用
     Xvfb sudo git bash-completion make && \
     # 安装postgres客户端
