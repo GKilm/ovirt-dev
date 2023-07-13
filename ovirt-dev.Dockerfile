@@ -44,6 +44,6 @@ RUN \
     # 拉取工程
     git clone -b ovirt-engine-4.4.10.7 https://github.com/oVirt/ovirt-engine.git /home/ovirt-dev/ovirt-engine && \
     # 构建工程
-    cd /home/ovirt-dev/ovirt-engine && make clean install-dev PREFIX=/home/ovirt-dev/ovirt-exec DEV_EXTRA_BUILD_FLAGS_GWT_DEFAULTS="-Dgwt.userAgent=safari -Dgwt.locale=zh_CN,en_US" && mvn dependency:sources && mvn dependency:resolve -Dclassifier=javadoc
+    cd /home/ovirt-dev/ovirt-engine && make clean install-dev SKIP_CHECKS=1 PREFIX=/home/ovirt-dev/ovirt-exec DEV_EXTRA_BUILD_FLAGS_GWT_DEFAULTS="-Dgwt.userAgent=safari -Dgwt.locale=zh_CN,en_US" && mvn dependency:sources && mvn dependency:resolve -Dclassifier=javadoc
 
 WORKDIR /home/ovirt-dev/ovirt-engine
