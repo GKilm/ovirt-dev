@@ -1,0 +1,90 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Attach to Remote Program",
+            "request": "attach",
+            "hostName": "127.0.0.1",
+            "port": "8787"
+        },
+        
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against 127.0.0.1",
+            "url": "http://127.0.0.1:8080",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/auth/UserLoginChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/auth/UserLoginChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/presenter/AddActionButtonEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/presenter/AddActionButtonEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/presenter/DetailItemSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/presenter/DetailItemSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/presenter/RedrawDynamicTabContainerEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/presenter/RedrawDynamicTabContainerEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/presenter/SetDynamicTabAccessibleEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/presenter/SetDynamicTabAccessibleEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/presenter/popup/ConsoleModelChangedEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/presenter/popup/ConsoleModelChangedEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/presenter/popup/numa/NumaVmSelectedEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/presenter/popup/numa/NumaVmSelectedEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/presenter/popup/numa/UpdatedVnumaEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/presenter/popup/numa/UpdatedVnumaEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/system/ApplicationFocusChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/system/ApplicationFocusChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/widget/editor/EditorStateUpdateEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/widget/editor/EditorStateUpdateEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/widget/refresh/ManualRefreshEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/target/generated-sources/annotations/org/ovirt/engine/ui/common/widget/refresh/ManualRefreshEvent.java",
+                
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/common/*": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-common/src/main/java/org/ovirt/engine/ui/common/*",
+                
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/extension/*": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-extension/src/main/java/org/ovirt/engine/ui/extension/*",
+                
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/frontend/communication/AsyncOperationCompleteEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/frontend/target/generated-sources/annotations/org/ovirt/engine/ui/frontend/communication/AsyncOperationCompleteEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/frontend/communication/AsyncOperationStartedEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/frontend/target/generated-sources/annotations/org/ovirt/engine/ui/frontend/communication/AsyncOperationStartedEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/frontend/communication/EngineSessionRefreshedEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/frontend/target/generated-sources/annotations/org/ovirt/engine/ui/frontend/communication/EngineSessionRefreshedEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/frontend/communication/RefreshActiveModelEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/frontend/target/generated-sources/annotations/org/ovirt/engine/ui/frontend/communication/RefreshActiveModelEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/frontend/gwtservices/GenericApiGWTServiceAsync.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/frontend/target/generated-sources/gwt/org/ovirt/engine/ui/frontend/gwtservices/GenericApiGWTServiceAsync.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/frontend/*": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/frontend/src/main/java/org/ovirt/engine/ui/frontend/*",
+                
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/uicommonweb/*": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/uicommonweb/src/main/java/org/ovirt/engine/ui/uicommonweb/*",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/uicompat/*": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/uicompat/src/main/java/org/ovirt/engine/ui/uicompat/*",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/uioverrides/*": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-extension/src/main/java/org/ovirt/engine/ui/uioverrides/*",
+                
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/ClusterSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/ClusterSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/DataCenterSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/DataCenterSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/DiskSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/DiskSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/ErrataSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/ErrataSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/EventSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/EventSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/HostSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/HostSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/NetworkSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/NetworkSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/PoolSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/PoolSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/ProviderSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/ProviderSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/QuotaSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/QuotaSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/RevealOverlayContentEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/RevealOverlayContentEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/SessionSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/SessionSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/SetDynamicTabContentUrlEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/SetDynamicTabContentUrlEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/SetDynamicTabUnloadHandlerEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/SetDynamicTabUnloadHandlerEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/StorageSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/StorageSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/TemplateSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/TemplateSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/UserSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/UserSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/VirtualMachineSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/VirtualMachineSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/VnicProfileSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/VnicProfileSelectionChangeEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/VolumeSelectionChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/VolumeSelectionChangeEvent.java",
+
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/popup/CloseDynamicPopupEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/popup/CloseDynamicPopupEvent.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/section/main/presenter/popup/SetDynamicPopupContentUrlEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/section/main/presenter/popup/SetDynamicPopupContentUrlEvent.java",
+
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/uicommon/model/TagActivationChangeEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/uicommon/model/TagActivationChangeEvent.java",
+                
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/system/MessageReceivedEvent.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/target/generated-sources/annotations/org/ovirt/engine/ui/webadmin/system/MessageReceivedEvent.java",
+                
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/ui/webadmin/*": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/webadmin/src/main/java/org/ovirt/engine/ui/webadmin/*",
+                
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/core/aaa/*": "/home/ovirt-dev/ovirt-engine/backend/manager/modules/common/src/main/java/org/ovirt/engine/core/aaa/*",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/core/common/queries/QueryReturnValue_CustomFieldSerializer.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-extension/src/main/java/org/ovirt/engine/core/common/queries/QueryReturnValue_CustomFieldSerializer.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/core/common/action/ActionReturnValue_CustomFieldSerializer.java": "/home/ovirt-dev/ovirt-engine/frontend/webadmin/modules/gwt-extension/src/main/java/org/ovirt/engine/core/common/action/ActionReturnValue_CustomFieldSerializer.java",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/core/common/*": "/home/ovirt-dev/ovirt-engine/backend/manager/modules/common/src/main/java/org/ovirt/engine/core/common/*",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/core/compat/*": "/home/ovirt-dev/ovirt-engine/backend/manager/modules/compat/src/main/java/org/ovirt/engine/core/compat/*",
+                "http://127.0.0.1:9876/sourcemaps/webadmin/org/ovirt/engine/core/searchbackend/*": "/home/ovirt-dev/ovirt-engine/backend/manager/modules/searchbackend/src/main/java/org/ovirt/engine/core/searchbackend/*"
+            },
+            "smartStep": true,
+            // "skipFiles": ["MY_MODULE-*.js"], // I choose to skip this file because it is very large and not handled well by VS Code
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+---
+version: 1
+playbooks_root_dir: '/home/ovirt-dev/ovirt-exec/share/ovirt-engine/ansible-runner-service-project'
+ssh_private_key: '$PREFIX/ovirt-dev/ovirt-exec/pki/ovirt-engine/keys/engine_id_rsa'
+port: 50001
+target_user: root

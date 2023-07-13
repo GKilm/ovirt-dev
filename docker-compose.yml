@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  # ovirt-dev
+  ovirt-dev:
+    # image和build二选一
+    image: ovirt-dev:4.4.10.7
+    build: 
+      context: .
+      dockerfile: ovirt-dev.Dockerfile
+    environment:
+      PREFIX: /home/ovirt-dev/ovirt-exec
+      DISPLAY: :2
+    container_name: ovirt-dev
+    # 后台运行Xvfb
+    command: 'ps -ef | grep Xvfb | grep -v grep >> /dev/null || Xvfb :2 -ac &'
+    volumes:
+      - ./config/launch.json:/home/ovirt-dev/ovirt-engine/.vscode/launch.json
+    restart: always
+  # postgres db
+  postgres:
+    image: postgres:12.15
+    container_name: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USERS_USER: postgres
+    command: postgres -c config_file=/etc/postgresql.conf
+    volumes:
+      - ./config/postgresql.conf:/etc/postgresql.conf
+      - ./config/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    restart: always

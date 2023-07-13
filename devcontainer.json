@@ -1,0 +1,20 @@
+{
+    "image": "ovirt-dev:4.4.10.7",
+    // "dockerComposeFile": ["./docker-compose.yml"],
+    // "service": "ovirt-dev",
+    "workspaceFolder": "/home/ovirt-dev/ovirt-engine",
+    "extensions": [
+        "vscjava.vscode-java-pack",
+        "cwan.native-ascii-converter",
+        "DotJoshJohnson.xml",
+        "redhat.vscode-yaml",
+    ],
+    "settings": {
+        "java.autobuild.enabled": false,
+        "native-ascii-converter.auto-conversion-on-activate": true,
+        "native-ascii-converter.auto-conversion-on-save": true,
+        "native-ascii-converter.letter-case": "Upper case",
+        "debug.allowBreakpointsEverywhere": true
+    },
+    "mounts": [{ "source": "./config/launch.json", "target": "/home/ovirt-dev/ovirt-engine/.vscode/launch.json", "type": "volume" }]
+}
