@@ -1,5 +1,5 @@
 {
-    "image": "ovirt-dev:4.4.10.7",
+    "image": "gkilm/ovirt-dev:4.4.10.7",
     // "dockerComposeFile": ["./docker-compose.yml"],
     // "service": "ovirt-dev",
     "workspaceFolder": "/home/ovirt-dev/ovirt-engine",
