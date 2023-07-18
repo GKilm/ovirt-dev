@@ -4,7 +4,7 @@ services:
   # ovirt-dev
   ovirt-dev:
     # image和build二选一
-    image: ovirt-dev:4.4.10.7
+    image: gkilm/ovirt-dev:4.4.10.7
     build: 
       context: .
       dockerfile: ovirt-dev.Dockerfile
